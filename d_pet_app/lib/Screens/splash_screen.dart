@@ -22,6 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 colors: [Colors.black, Colors.white])),
         child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -33,18 +34,16 @@ class _SplashScreenState extends State<SplashScreen> {
                       fontWeight: FontWeight.bold,
                       fontFamily: AutofillHints.addressCityAndState,
                       color: Colors.white),
-                  textAlign: TextAlign.center,
                 ),
               ],
             ),
             SizedBox(
-              height: 150,
+              height: 50,
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Image(
-                  image: NetworkImage(
-                      "https://th.bing.com/th/id/OIP.hFv5_TIBLZtmi3twmHkv9AAAAA?pid=ImgDet&rs=1")),
+            Image(
+              image: NetworkImage(
+                  "https://th.bing.com/th/id/R.0d35df89233dc69b03e3978ef8464cb7?rik=locuh62ApckHdA&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f8%2fGolden-Retriever-PNG-Transparent-Background.png&ehk=IJcM2nUMbujLgN7VnQ472i5%2bho9Ngga5cQxu55WGFAU%3d&risl=&pid=ImgRaw&r=0"),
+              fit: BoxFit.contain,
             ),
             SizedBox(
               height: 10,
